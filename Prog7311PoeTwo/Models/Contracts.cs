@@ -1,5 +1,6 @@
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Prog7311PoeTwo.Models
 {
@@ -27,6 +28,14 @@ namespace Prog7311PoeTwo.Models
         
         [DisplayName("End")]
         public DateOnly EndDate { get; set; }
+
+        public string? FileName { get; set; }
+
+    public string? FilePath { get; set; }
+
+    [NotMapped]
+    public IFormFile? UploadFile { get; set; }
+
     }
 
     public enum ContractStatus
