@@ -7,64 +7,10 @@
     <title>@ViewData["Title"] - Global Logistics Management</title>
 
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-</head>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
 
-<body>
-
-<header>
-    <nav class="navbar custom-navbar shadow-sm">
-        <div class="container navbar-container">
-
-            <a class="navbar-brand" asp-controller="Home" asp-action="Index">
-                Global Logistics Management
-            </a>
-
-            <div class="navbar-nav ms-auto d-flex align-items-center gap-2">
-
-                <a class="nav-link" asp-controller="Home" asp-action="Index">Home</a>
-                <a class="nav-link" asp-controller="Client" asp-action="Index">Clients</a>
-                <a class="nav-link" asp-controller="Contracts" asp-action="Index">Contracts</a>
-                <a class="nav-link" asp-controller="LogMan" asp-action="Index">Logistics</a>
-
-            </div>
-
-        </div>
-    </nav>
-</header>
-
-<div class="container py-4">
-    <main role="main" class="pb-3">
-        @RenderBody()
-    </main>
-</div>
-
-<footer class="footer">
-    <div class="container text-center">
-
-        &copy; 2026 - Global Logistics Management -
-
-        <div class="footer-links">
-            <a asp-controller="Home" asp-action="Index">Home</a>
-            <a asp-controller="Client" asp-action="Index">Clients</a>
-            <a asp-controller="Contracts" asp-action="Index">Contracts</a>
-            <a asp-controller="LogMan" asp-action="Index">Logistics</a>
-        </div>
-
-    </div>
-</footer>
-
-<script src="~/lib/jquery/dist/jquery.min.js"></script>
-<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-<script src="~/js/site.js"></script>
-
-@await RenderSectionAsync("Scripts", required: false)
-
-</body>
-</html>
-
-<style>
-
-body {
+    <style>
+ body {
     background-color: #f0f0f0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
@@ -204,5 +150,74 @@ h2 {
 .footer-links a:hover {
     text-decoration: underline;
 }
+    </style>
+</head>
 
-</style>
+<body>
+
+<header>
+    <nav class="navbar navbar-expand-lg custom-navbar shadow-sm">
+    <div class="container navbar-container">
+
+        <a class="navbar-brand" asp-controller="Home" asp-action="Index">
+            Global Logistics Management
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" asp-controller="Home" asp-action="Index">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" asp-controller="Client" asp-action="Index">Clients</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" asp-controller="Contracts" asp-action="Index">Contracts</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" asp-controller="LogMan" asp-action="Index">Logistics</a>
+                </li>
+
+            </ul>
+
+        </div>
+    </div>
+</nav>
+</header>
+
+<div class="container py-4">
+    <main role="main" class="pb-3">
+        @RenderBody()
+    </main>
+</div>
+
+<footer class="footer">
+    <div class="container text-center">
+        &copy; 2026 - Global Logistics Management -
+
+        <div class="footer-links">
+            <a asp-controller="Home" asp-action="Index">Home</a>
+            <a asp-controller="Client" asp-action="Index">Clients</a>
+            <a asp-controller="Contracts" asp-action="Index">Contracts</a>
+            <a asp-controller="LogMan" asp-action="Index">Logistics</a>
+        </div>
+    </div>
+</footer>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="~/js/site.js"></script>
+
+@await RenderSectionAsync("Scripts", required: false)
+
+</body>
+</html>

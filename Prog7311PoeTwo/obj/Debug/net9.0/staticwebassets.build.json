@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Gu9vmi2c5TeTlO68a+ydUhfilW+Gp3gud3FvOVbxT14=",
+  "Hash": "7UspBBssbLMYlhfN4Om65kxQw38pN2YMk1dtgiyCZkk=",
   "Source": "Prog7311PoeTwo",
   "BasePath": "_content/Prog7311PoeTwo",
   "Mode": "Default",
@@ -500,12 +500,12 @@
       "OriginalItemSpec": "C:\\Users\\Music\\Desktop\\Year 3 Term 1\\PROG7311\\Prog7311 - Part 2\\Prog7311PoeTwo\\wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\Music\\Desktop\\Year 3 Term 1\\PROG7311\\Prog7311 - Part 2\\Prog7311PoeTwo\\obj\\Debug\\net9.0\\compressed\\ey03ms9i33-uli4qx1qwv.gz",
+      "Identity": "C:\\Users\\Music\\Desktop\\Year 3 Term 1\\PROG7311\\Prog7311 - Part 2\\Prog7311PoeTwo\\obj\\Debug\\net9.0\\compressed\\ey03ms9i33-absnkmjkji.gz",
       "SourceId": "Prog7311PoeTwo",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\Music\\Desktop\\Year 3 Term 1\\PROG7311\\Prog7311 - Part 2\\Prog7311PoeTwo\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/Prog7311PoeTwo",
-      "RelativePath": "Prog7311PoeTwo#[.{fingerprint=uli4qx1qwv}]?.styles.css.gz",
+      "RelativePath": "Prog7311PoeTwo#[.{fingerprint=absnkmjkji}]?.styles.css.gz",
       "AssetKind": "All",
       "AssetMode": "CurrentProject",
       "AssetRole": "Alternative",
@@ -514,8 +514,8 @@
       "RelatedAsset": "C:\\Users\\Music\\Desktop\\Year 3 Term 1\\PROG7311\\Prog7311 - Part 2\\Prog7311PoeTwo\\obj\\Debug\\net9.0\\scopedcss\\bundle\\Prog7311PoeTwo.styles.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "ve5o2djri2",
-      "Integrity": "mUjoiI2yD86jHnK1QO9keD250f4kF+K8DWztostqUWg=",
+      "Fingerprint": "5shwizl1wl",
+      "Integrity": "BXCH6ZunhggWVoyVqti2K3pEbmPKwK1WC97FtmAxBFg=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Music\\Desktop\\Year 3 Term 1\\PROG7311\\Prog7311 - Part 2\\Prog7311PoeTwo\\obj\\Debug\\net9.0\\scopedcss\\bundle\\Prog7311PoeTwo.styles.css"
@@ -605,12 +605,12 @@
       "OriginalItemSpec": "C:\\Users\\Music\\Desktop\\Year 3 Term 1\\PROG7311\\Prog7311 - Part 2\\Prog7311PoeTwo\\wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "C:\\Users\\Music\\Desktop\\Year 3 Term 1\\PROG7311\\Prog7311 - Part 2\\Prog7311PoeTwo\\obj\\Debug\\net9.0\\compressed\\hje2yzzo96-uli4qx1qwv.gz",
+      "Identity": "C:\\Users\\Music\\Desktop\\Year 3 Term 1\\PROG7311\\Prog7311 - Part 2\\Prog7311PoeTwo\\obj\\Debug\\net9.0\\compressed\\hje2yzzo96-absnkmjkji.gz",
       "SourceId": "Prog7311PoeTwo",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\Music\\Desktop\\Year 3 Term 1\\PROG7311\\Prog7311 - Part 2\\Prog7311PoeTwo\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/Prog7311PoeTwo",
-      "RelativePath": "Prog7311PoeTwo#[.{fingerprint=uli4qx1qwv}]!.bundle.scp.css.gz",
+      "RelativePath": "Prog7311PoeTwo#[.{fingerprint=absnkmjkji}]!.bundle.scp.css.gz",
       "AssetKind": "All",
       "AssetMode": "Reference",
       "AssetRole": "Alternative",
@@ -619,8 +619,8 @@
       "RelatedAsset": "C:\\Users\\Music\\Desktop\\Year 3 Term 1\\PROG7311\\Prog7311 - Part 2\\Prog7311PoeTwo\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\Prog7311PoeTwo.bundle.scp.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "ve5o2djri2",
-      "Integrity": "mUjoiI2yD86jHnK1QO9keD250f4kF+K8DWztostqUWg=",
+      "Fingerprint": "5shwizl1wl",
+      "Integrity": "BXCH6ZunhggWVoyVqti2K3pEbmPKwK1WC97FtmAxBFg=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Music\\Desktop\\Year 3 Term 1\\PROG7311\\Prog7311 - Part 2\\Prog7311PoeTwo\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\Prog7311PoeTwo.bundle.scp.css"
@@ -1375,8 +1375,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ApplicationBundle",
-      "Fingerprint": "uli4qx1qwv",
-      "Integrity": "MkUKdFNWrlxGY0PR1AQMPSt6JYDWM3BYTMsR+2uEeYA=",
+      "Fingerprint": "absnkmjkji",
+      "Integrity": "FstR5H7gof4fjcglP8iHnQLT8q8jWN7aedA42kTNUcE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Music\\Desktop\\Year 3 Term 1\\PROG7311\\Prog7311 - Part 2\\Prog7311PoeTwo\\obj\\Debug\\net9.0\\scopedcss\\bundle\\Prog7311PoeTwo.styles.css"
@@ -1396,8 +1396,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ProjectBundle",
-      "Fingerprint": "uli4qx1qwv",
-      "Integrity": "MkUKdFNWrlxGY0PR1AQMPSt6JYDWM3BYTMsR+2uEeYA=",
+      "Fingerprint": "absnkmjkji",
+      "Integrity": "FstR5H7gof4fjcglP8iHnQLT8q8jWN7aedA42kTNUcE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Music\\Desktop\\Year 3 Term 1\\PROG7311\\Prog7311 - Part 2\\Prog7311PoeTwo\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\Prog7311PoeTwo.bundle.scp.css"
@@ -1443,6 +1443,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\Music\\Desktop\\Year 3 Term 1\\PROG7311\\Prog7311 - Part 2\\Prog7311PoeTwo\\wwwroot\\FileServer\\Contracts\\f7759f3b-ed66-4157-9685-0e3fd2a5a8c8.jpg",
+      "SourceId": "Prog7311PoeTwo",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Music\\Desktop\\Year 3 Term 1\\PROG7311\\Prog7311 - Part 2\\Prog7311PoeTwo\\wwwroot\\",
+      "BasePath": "_content/Prog7311PoeTwo",
+      "RelativePath": "FileServer/Contracts/f7759f3b-ed66-4157-9685-0e3fd2a5a8c8#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "wnmbsz44zq",
+      "Integrity": "fI/q8ucECskEIJFSLImORfanVUNykMov6owv4wNgAMU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\FileServer\\Contracts\\f7759f3b-ed66-4157-9685-0e3fd2a5a8c8.jpg"
     },
     {
       "Identity": "C:\\Users\\Music\\Desktop\\Year 3 Term 1\\PROG7311\\Prog7311 - Part 2\\Prog7311PoeTwo\\wwwroot\\js\\site.js",
@@ -3320,6 +3341,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-wfFuuYm+Lh6RbCeeiUqxw334b/hIOkp5j9eokGUM1Y0="
+        }
+      ]
+    },
+    {
+      "Route": "FileServer/Contracts/f7759f3b-ed66-4157-9685-0e3fd2a5a8c8.jpg",
+      "AssetFile": "C:\\Users\\Music\\Desktop\\Year 3 Term 1\\PROG7311\\Prog7311 - Part 2\\Prog7311PoeTwo\\wwwroot\\FileServer\\Contracts\\f7759f3b-ed66-4157-9685-0e3fd2a5a8c8.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "93096"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fI/q8ucECskEIJFSLImORfanVUNykMov6owv4wNgAMU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 07 Jun 2026 04:23:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-fI/q8ucECskEIJFSLImORfanVUNykMov6owv4wNgAMU="
+        }
+      ]
+    },
+    {
+      "Route": "FileServer/Contracts/f7759f3b-ed66-4157-9685-0e3fd2a5a8c8.wnmbsz44zq.jpg",
+      "AssetFile": "C:\\Users\\Music\\Desktop\\Year 3 Term 1\\PROG7311\\Prog7311 - Part 2\\Prog7311PoeTwo\\wwwroot\\FileServer\\Contracts\\f7759f3b-ed66-4157-9685-0e3fd2a5a8c8.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "93096"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fI/q8ucECskEIJFSLImORfanVUNykMov6owv4wNgAMU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 07 Jun 2026 04:23:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wnmbsz44zq"
+        },
+        {
+          "Name": "label",
+          "Value": "FileServer/Contracts/f7759f3b-ed66-4157-9685-0e3fd2a5a8c8.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-fI/q8ucECskEIJFSLImORfanVUNykMov6owv4wNgAMU="
         }
       ]
     },
@@ -21286,13 +21389,13 @@
       ]
     },
     {
-      "Route": "Prog7311PoeTwo.bundle.scp.css",
-      "AssetFile": "C:\\Users\\Music\\Desktop\\Year 3 Term 1\\PROG7311\\Prog7311 - Part 2\\Prog7311PoeTwo\\obj\\Debug\\net9.0\\compressed\\hje2yzzo96-uli4qx1qwv.gz",
+      "Route": "Prog7311PoeTwo.absnkmjkji.bundle.scp.css",
+      "AssetFile": "C:\\Users\\Music\\Desktop\\Year 3 Term 1\\PROG7311\\Prog7311 - Part 2\\Prog7311PoeTwo\\obj\\Debug\\net9.0\\compressed\\hje2yzzo96-absnkmjkji.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001140250855"
+          "Quality": "0.001103752759"
         }
       ],
       "ResponseHeaders": [
@@ -21302,19 +21405,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "876"
+          "Value": "905"
         },
         {
           "Name": "ETag",
-          "Value": "\"mUjoiI2yD86jHnK1QO9keD250f4kF+K8DWztostqUWg=\""
+          "Value": "\"BXCH6ZunhggWVoyVqti2K3pEbmPKwK1WC97FtmAxBFg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 23 Apr 2026 06:11:06 GMT"
+          "Value": "Sun, 07 Jun 2026 04:39:45 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "no-cache"
+          "Value": "max-age=31536000, immutable"
         },
         {
           "Name": "Content-Encoding",
@@ -21330,18 +21433,26 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"MkUKdFNWrlxGY0PR1AQMPSt6JYDWM3BYTMsR+2uEeYA=\""
+          "Value": "W/\"FstR5H7gof4fjcglP8iHnQLT8q8jWN7aedA42kTNUcE=\""
         }
       ],
       "EndpointProperties": [
         {
+          "Name": "fingerprint",
+          "Value": "absnkmjkji"
+        },
+        {
+          "Name": "label",
+          "Value": "Prog7311PoeTwo.bundle.scp.css"
+        },
+        {
           "Name": "integrity",
-          "Value": "sha256-MkUKdFNWrlxGY0PR1AQMPSt6JYDWM3BYTMsR+2uEeYA="
+          "Value": "sha256-FstR5H7gof4fjcglP8iHnQLT8q8jWN7aedA42kTNUcE="
         }
       ]
     },
     {
-      "Route": "Prog7311PoeTwo.bundle.scp.css",
+      "Route": "Prog7311PoeTwo.absnkmjkji.bundle.scp.css",
       "AssetFile": "C:\\Users\\Music\\Desktop\\Year 3 Term 1\\PROG7311\\Prog7311 - Part 2\\Prog7311PoeTwo\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\Prog7311PoeTwo.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -21351,7 +21462,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2630"
+          "Value": "2652"
         },
         {
           "Name": "Content-Type",
@@ -21359,258 +21470,21 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"MkUKdFNWrlxGY0PR1AQMPSt6JYDWM3BYTMsR+2uEeYA=\""
+          "Value": "\"FstR5H7gof4fjcglP8iHnQLT8q8jWN7aedA42kTNUcE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 23 Apr 2026 06:11:06 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-MkUKdFNWrlxGY0PR1AQMPSt6JYDWM3BYTMsR+2uEeYA="
-        }
-      ]
-    },
-    {
-      "Route": "Prog7311PoeTwo.bundle.scp.css.gz",
-      "AssetFile": "C:\\Users\\Music\\Desktop\\Year 3 Term 1\\PROG7311\\Prog7311 - Part 2\\Prog7311PoeTwo\\obj\\Debug\\net9.0\\compressed\\hje2yzzo96-uli4qx1qwv.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "876"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"mUjoiI2yD86jHnK1QO9keD250f4kF+K8DWztostqUWg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 23 Apr 2026 06:11:06 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-mUjoiI2yD86jHnK1QO9keD250f4kF+K8DWztostqUWg="
-        }
-      ]
-    },
-    {
-      "Route": "Prog7311PoeTwo.styles.css",
-      "AssetFile": "C:\\Users\\Music\\Desktop\\Year 3 Term 1\\PROG7311\\Prog7311 - Part 2\\Prog7311PoeTwo\\obj\\Debug\\net9.0\\compressed\\ey03ms9i33-uli4qx1qwv.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.001140250855"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "876"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"mUjoiI2yD86jHnK1QO9keD250f4kF+K8DWztostqUWg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 23 Apr 2026 06:11:06 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"MkUKdFNWrlxGY0PR1AQMPSt6JYDWM3BYTMsR+2uEeYA=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-MkUKdFNWrlxGY0PR1AQMPSt6JYDWM3BYTMsR+2uEeYA="
-        }
-      ]
-    },
-    {
-      "Route": "Prog7311PoeTwo.styles.css",
-      "AssetFile": "C:\\Users\\Music\\Desktop\\Year 3 Term 1\\PROG7311\\Prog7311 - Part 2\\Prog7311PoeTwo\\obj\\Debug\\net9.0\\scopedcss\\bundle\\Prog7311PoeTwo.styles.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "2630"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"MkUKdFNWrlxGY0PR1AQMPSt6JYDWM3BYTMsR+2uEeYA=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 23 Apr 2026 06:11:06 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-MkUKdFNWrlxGY0PR1AQMPSt6JYDWM3BYTMsR+2uEeYA="
-        }
-      ]
-    },
-    {
-      "Route": "Prog7311PoeTwo.styles.css.gz",
-      "AssetFile": "C:\\Users\\Music\\Desktop\\Year 3 Term 1\\PROG7311\\Prog7311 - Part 2\\Prog7311PoeTwo\\obj\\Debug\\net9.0\\compressed\\ey03ms9i33-uli4qx1qwv.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "876"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"mUjoiI2yD86jHnK1QO9keD250f4kF+K8DWztostqUWg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 23 Apr 2026 06:11:06 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-mUjoiI2yD86jHnK1QO9keD250f4kF+K8DWztostqUWg="
-        }
-      ]
-    },
-    {
-      "Route": "Prog7311PoeTwo.uli4qx1qwv.bundle.scp.css",
-      "AssetFile": "C:\\Users\\Music\\Desktop\\Year 3 Term 1\\PROG7311\\Prog7311 - Part 2\\Prog7311PoeTwo\\obj\\Debug\\net9.0\\compressed\\hje2yzzo96-uli4qx1qwv.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.001140250855"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "876"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"mUjoiI2yD86jHnK1QO9keD250f4kF+K8DWztostqUWg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 23 Apr 2026 06:11:06 GMT"
+          "Value": "Sun, 07 Jun 2026 04:39:45 GMT"
         },
         {
           "Name": "Cache-Control",
           "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"MkUKdFNWrlxGY0PR1AQMPSt6JYDWM3BYTMsR+2uEeYA=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "uli4qx1qwv"
+          "Value": "absnkmjkji"
         },
         {
           "Name": "label",
@@ -21618,13 +21492,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-MkUKdFNWrlxGY0PR1AQMPSt6JYDWM3BYTMsR+2uEeYA="
+          "Value": "sha256-FstR5H7gof4fjcglP8iHnQLT8q8jWN7aedA42kTNUcE="
         }
       ]
     },
     {
-      "Route": "Prog7311PoeTwo.uli4qx1qwv.bundle.scp.css",
-      "AssetFile": "C:\\Users\\Music\\Desktop\\Year 3 Term 1\\PROG7311\\Prog7311 - Part 2\\Prog7311PoeTwo\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\Prog7311PoeTwo.bundle.scp.css",
+      "Route": "Prog7311PoeTwo.absnkmjkji.bundle.scp.css.gz",
+      "AssetFile": "C:\\Users\\Music\\Desktop\\Year 3 Term 1\\PROG7311\\Prog7311 - Part 2\\Prog7311PoeTwo\\obj\\Debug\\net9.0\\compressed\\hje2yzzo96-absnkmjkji.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -21633,7 +21507,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2630"
+          "Value": "905"
         },
         {
           "Name": "Content-Type",
@@ -21641,56 +21515,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"MkUKdFNWrlxGY0PR1AQMPSt6JYDWM3BYTMsR+2uEeYA=\""
+          "Value": "\"BXCH6ZunhggWVoyVqti2K3pEbmPKwK1WC97FtmAxBFg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 23 Apr 2026 06:11:06 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "uli4qx1qwv"
-        },
-        {
-          "Name": "label",
-          "Value": "Prog7311PoeTwo.bundle.scp.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-MkUKdFNWrlxGY0PR1AQMPSt6JYDWM3BYTMsR+2uEeYA="
-        }
-      ]
-    },
-    {
-      "Route": "Prog7311PoeTwo.uli4qx1qwv.bundle.scp.css.gz",
-      "AssetFile": "C:\\Users\\Music\\Desktop\\Year 3 Term 1\\PROG7311\\Prog7311 - Part 2\\Prog7311PoeTwo\\obj\\Debug\\net9.0\\compressed\\hje2yzzo96-uli4qx1qwv.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "876"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"mUjoiI2yD86jHnK1QO9keD250f4kF+K8DWztostqUWg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 23 Apr 2026 06:11:06 GMT"
+          "Value": "Sun, 07 Jun 2026 04:39:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -21708,7 +21537,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "uli4qx1qwv"
+          "Value": "absnkmjkji"
         },
         {
           "Name": "label",
@@ -21716,18 +21545,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-mUjoiI2yD86jHnK1QO9keD250f4kF+K8DWztostqUWg="
+          "Value": "sha256-BXCH6ZunhggWVoyVqti2K3pEbmPKwK1WC97FtmAxBFg="
         }
       ]
     },
     {
-      "Route": "Prog7311PoeTwo.uli4qx1qwv.styles.css",
-      "AssetFile": "C:\\Users\\Music\\Desktop\\Year 3 Term 1\\PROG7311\\Prog7311 - Part 2\\Prog7311PoeTwo\\obj\\Debug\\net9.0\\compressed\\ey03ms9i33-uli4qx1qwv.gz",
+      "Route": "Prog7311PoeTwo.absnkmjkji.styles.css",
+      "AssetFile": "C:\\Users\\Music\\Desktop\\Year 3 Term 1\\PROG7311\\Prog7311 - Part 2\\Prog7311PoeTwo\\obj\\Debug\\net9.0\\compressed\\ey03ms9i33-absnkmjkji.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001140250855"
+          "Quality": "0.001103752759"
         }
       ],
       "ResponseHeaders": [
@@ -21737,15 +21566,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "876"
+          "Value": "905"
         },
         {
           "Name": "ETag",
-          "Value": "\"mUjoiI2yD86jHnK1QO9keD250f4kF+K8DWztostqUWg=\""
+          "Value": "\"BXCH6ZunhggWVoyVqti2K3pEbmPKwK1WC97FtmAxBFg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 23 Apr 2026 06:11:06 GMT"
+          "Value": "Sun, 07 Jun 2026 04:39:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -21765,13 +21594,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"MkUKdFNWrlxGY0PR1AQMPSt6JYDWM3BYTMsR+2uEeYA=\""
+          "Value": "W/\"FstR5H7gof4fjcglP8iHnQLT8q8jWN7aedA42kTNUcE=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "uli4qx1qwv"
+          "Value": "absnkmjkji"
         },
         {
           "Name": "label",
@@ -21779,12 +21608,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-MkUKdFNWrlxGY0PR1AQMPSt6JYDWM3BYTMsR+2uEeYA="
+          "Value": "sha256-FstR5H7gof4fjcglP8iHnQLT8q8jWN7aedA42kTNUcE="
         }
       ]
     },
     {
-      "Route": "Prog7311PoeTwo.uli4qx1qwv.styles.css",
+      "Route": "Prog7311PoeTwo.absnkmjkji.styles.css",
       "AssetFile": "C:\\Users\\Music\\Desktop\\Year 3 Term 1\\PROG7311\\Prog7311 - Part 2\\Prog7311PoeTwo\\obj\\Debug\\net9.0\\scopedcss\\bundle\\Prog7311PoeTwo.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -21794,7 +21623,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2630"
+          "Value": "2652"
         },
         {
           "Name": "Content-Type",
@@ -21802,11 +21631,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"MkUKdFNWrlxGY0PR1AQMPSt6JYDWM3BYTMsR+2uEeYA=\""
+          "Value": "\"FstR5H7gof4fjcglP8iHnQLT8q8jWN7aedA42kTNUcE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 23 Apr 2026 06:11:06 GMT"
+          "Value": "Sun, 07 Jun 2026 04:39:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -21816,7 +21645,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "uli4qx1qwv"
+          "Value": "absnkmjkji"
         },
         {
           "Name": "label",
@@ -21824,13 +21653,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-MkUKdFNWrlxGY0PR1AQMPSt6JYDWM3BYTMsR+2uEeYA="
+          "Value": "sha256-FstR5H7gof4fjcglP8iHnQLT8q8jWN7aedA42kTNUcE="
         }
       ]
     },
     {
-      "Route": "Prog7311PoeTwo.uli4qx1qwv.styles.css.gz",
-      "AssetFile": "C:\\Users\\Music\\Desktop\\Year 3 Term 1\\PROG7311\\Prog7311 - Part 2\\Prog7311PoeTwo\\obj\\Debug\\net9.0\\compressed\\ey03ms9i33-uli4qx1qwv.gz",
+      "Route": "Prog7311PoeTwo.absnkmjkji.styles.css.gz",
+      "AssetFile": "C:\\Users\\Music\\Desktop\\Year 3 Term 1\\PROG7311\\Prog7311 - Part 2\\Prog7311PoeTwo\\obj\\Debug\\net9.0\\compressed\\ey03ms9i33-absnkmjkji.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -21839,7 +21668,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "876"
+          "Value": "905"
         },
         {
           "Name": "Content-Type",
@@ -21847,11 +21676,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"mUjoiI2yD86jHnK1QO9keD250f4kF+K8DWztostqUWg=\""
+          "Value": "\"BXCH6ZunhggWVoyVqti2K3pEbmPKwK1WC97FtmAxBFg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 23 Apr 2026 06:11:06 GMT"
+          "Value": "Sun, 07 Jun 2026 04:39:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -21869,7 +21698,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "uli4qx1qwv"
+          "Value": "absnkmjkji"
         },
         {
           "Name": "label",
@@ -21877,7 +21706,281 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-mUjoiI2yD86jHnK1QO9keD250f4kF+K8DWztostqUWg="
+          "Value": "sha256-BXCH6ZunhggWVoyVqti2K3pEbmPKwK1WC97FtmAxBFg="
+        }
+      ]
+    },
+    {
+      "Route": "Prog7311PoeTwo.bundle.scp.css",
+      "AssetFile": "C:\\Users\\Music\\Desktop\\Year 3 Term 1\\PROG7311\\Prog7311 - Part 2\\Prog7311PoeTwo\\obj\\Debug\\net9.0\\compressed\\hje2yzzo96-absnkmjkji.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001103752759"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "905"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BXCH6ZunhggWVoyVqti2K3pEbmPKwK1WC97FtmAxBFg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 07 Jun 2026 04:39:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"FstR5H7gof4fjcglP8iHnQLT8q8jWN7aedA42kTNUcE=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-FstR5H7gof4fjcglP8iHnQLT8q8jWN7aedA42kTNUcE="
+        }
+      ]
+    },
+    {
+      "Route": "Prog7311PoeTwo.bundle.scp.css",
+      "AssetFile": "C:\\Users\\Music\\Desktop\\Year 3 Term 1\\PROG7311\\Prog7311 - Part 2\\Prog7311PoeTwo\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\Prog7311PoeTwo.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2652"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FstR5H7gof4fjcglP8iHnQLT8q8jWN7aedA42kTNUcE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 07 Jun 2026 04:39:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-FstR5H7gof4fjcglP8iHnQLT8q8jWN7aedA42kTNUcE="
+        }
+      ]
+    },
+    {
+      "Route": "Prog7311PoeTwo.bundle.scp.css.gz",
+      "AssetFile": "C:\\Users\\Music\\Desktop\\Year 3 Term 1\\PROG7311\\Prog7311 - Part 2\\Prog7311PoeTwo\\obj\\Debug\\net9.0\\compressed\\hje2yzzo96-absnkmjkji.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "905"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BXCH6ZunhggWVoyVqti2K3pEbmPKwK1WC97FtmAxBFg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 07 Jun 2026 04:39:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-BXCH6ZunhggWVoyVqti2K3pEbmPKwK1WC97FtmAxBFg="
+        }
+      ]
+    },
+    {
+      "Route": "Prog7311PoeTwo.styles.css",
+      "AssetFile": "C:\\Users\\Music\\Desktop\\Year 3 Term 1\\PROG7311\\Prog7311 - Part 2\\Prog7311PoeTwo\\obj\\Debug\\net9.0\\compressed\\ey03ms9i33-absnkmjkji.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001103752759"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "905"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BXCH6ZunhggWVoyVqti2K3pEbmPKwK1WC97FtmAxBFg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 07 Jun 2026 04:39:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"FstR5H7gof4fjcglP8iHnQLT8q8jWN7aedA42kTNUcE=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-FstR5H7gof4fjcglP8iHnQLT8q8jWN7aedA42kTNUcE="
+        }
+      ]
+    },
+    {
+      "Route": "Prog7311PoeTwo.styles.css",
+      "AssetFile": "C:\\Users\\Music\\Desktop\\Year 3 Term 1\\PROG7311\\Prog7311 - Part 2\\Prog7311PoeTwo\\obj\\Debug\\net9.0\\scopedcss\\bundle\\Prog7311PoeTwo.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2652"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FstR5H7gof4fjcglP8iHnQLT8q8jWN7aedA42kTNUcE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 07 Jun 2026 04:39:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-FstR5H7gof4fjcglP8iHnQLT8q8jWN7aedA42kTNUcE="
+        }
+      ]
+    },
+    {
+      "Route": "Prog7311PoeTwo.styles.css.gz",
+      "AssetFile": "C:\\Users\\Music\\Desktop\\Year 3 Term 1\\PROG7311\\Prog7311 - Part 2\\Prog7311PoeTwo\\obj\\Debug\\net9.0\\compressed\\ey03ms9i33-absnkmjkji.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "905"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BXCH6ZunhggWVoyVqti2K3pEbmPKwK1WC97FtmAxBFg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 07 Jun 2026 04:39:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-BXCH6ZunhggWVoyVqti2K3pEbmPKwK1WC97FtmAxBFg="
         }
       ]
     }
