@@ -1,0 +1,22 @@
+@model Prog7311PoeTwo.Models.ClientDetails
+
+@{
+    ViewData["Title"] = "Delete Client";
+}
+
+<h2>Delete Client</h2>
+
+<h4>Are you sure you want to delete this client?</h4>
+
+<div>
+    <p><strong>Name:</strong> @Model.ClientName</p>
+    <p><strong>Email:</strong> @Model.ClientEmail</p>
+    <p><strong>Phone:</strong> @Model.ClientPhoneNumber</p>
+</div>
+
+<form asp-action="Delete">
+    <input type="hidden" asp-for="ClientID" />
+
+    <button type="submit" class="btn btn-danger">Delete</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+</form>

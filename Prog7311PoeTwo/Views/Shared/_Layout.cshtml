@@ -1,0 +1,208 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Global Logistics Management</title>
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar custom-navbar shadow-sm">
+        <div class="container navbar-container">
+
+            <a class="navbar-brand" asp-controller="Home" asp-action="Index">
+                Global Logistics Management
+            </a>
+
+            <div class="navbar-nav ms-auto d-flex align-items-center gap-2">
+
+                <a class="nav-link" asp-controller="Home" asp-action="Index">Home</a>
+                <a class="nav-link" asp-controller="Client" asp-action="Index">Clients</a>
+                <a class="nav-link" asp-controller="Contracts" asp-action="Index">Contracts</a>
+                <a class="nav-link" asp-controller="LogMan" asp-action="Index">Logistics</a>
+
+            </div>
+
+        </div>
+    </nav>
+</header>
+
+<div class="container py-4">
+    <main role="main" class="pb-3">
+        @RenderBody()
+    </main>
+</div>
+
+<footer class="footer">
+    <div class="container text-center">
+
+        &copy; 2026 - Global Logistics Management -
+
+        <div class="footer-links">
+            <a asp-controller="Home" asp-action="Index">Home</a>
+            <a asp-controller="Client" asp-action="Index">Clients</a>
+            <a asp-controller="Contracts" asp-action="Index">Contracts</a>
+            <a asp-controller="LogMan" asp-action="Index">Logistics</a>
+        </div>
+
+    </div>
+</footer>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="~/js/site.js"></script>
+
+@await RenderSectionAsync("Scripts", required: false)
+
+</body>
+</html>
+
+<style>
+
+body {
+    background-color: #f0f0f0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+h1 {
+    color: purple;
+    font-size: 35px;
+}
+
+h2 {
+    font-size: 25px;
+    color: rgb(59, 58, 58);
+    text-align: center;
+}
+
+.custom-navbar {
+    min-height: 65px;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid hsl(4, 100%, 58%) !important;
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.navbar-brand {
+    font-size: 26px;
+    font-weight: 600;
+    color: rgb(172, 19, 144) !important;
+}
+
+.navbar-nav .nav-link {
+    font-size: 18px;
+    color: rgb(248, 23, 113) !important;
+    padding: 8px 14px !important;
+    border-radius: 8px;
+    white-space: nowrap;
+    transition: 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    background: rgba(255,255,255,0.15);
+    color: #9d057a !important;
+}
+
+.table {
+    width: 100%;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    margin-top: 20px;
+    border-collapse: separate;
+    border-spacing: 0 8px;
+}
+
+.table thead th {
+    padding: 16px 18px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.table tbody tr {
+    transition: 0.2s;
+}
+
+.table tbody tr td {
+    padding: 16px 18px;
+    vertical-align: middle;
+}
+
+.table td,
+.table th {
+    padding-left: 22px;
+    padding-right: 22px;
+}
+
+.table tbody tr {
+    background: #fff;
+    border-radius: 10px;
+}
+
+.table tbody tr:hover {
+    background: #ffeeee;
+    transform: scale(1.01);
+}
+
+.btn {
+    border-radius: 8px;
+    font-size: 14px;
+}
+.container {
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-weight: 600;
+    margin-bottom: 5px;
+    display: block;
+    color: #333;
+}
+
+.form-control {
+    border-radius: 8px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    transition: 0.2s;
+}
+
+.footer {
+    margin-top: 20px;
+    padding: 1rem 0;
+    font-size: 14px;
+    border-top: 2px solid hsl(4, 100%, 58%) !important;
+    background: transparent;
+}
+
+.footer-links {
+    margin-top: 5px;
+}
+
+.footer-links a {
+    color: rgb(248, 23, 113);
+    text-decoration: none;
+    margin: 0 8px;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+</style>

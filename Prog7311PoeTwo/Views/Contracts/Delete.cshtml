@@ -1,0 +1,28 @@
+@model Prog7311PoeTwo.Models.Contracts
+
+@{
+    ViewData["Title"] = "Delete Contract";
+}
+
+<h2>Delete Contract</h2>
+
+<h4>Are you sure you want to delete this contract?</h4>
+
+<div class="table-card">
+
+    <p><strong>Name:</strong> @Model.ContractName</p>
+    <p><strong>Client:</strong> @Model.ClientDetails?.ClientName</p>
+    <p><strong>Amount:</strong> @Model.Amount</p>
+    <p><strong>ZAR:</strong> @Model.AmountInZAR</p>
+    <p><strong>Start:</strong> @Model.StartDate</p>
+    <p><strong>End:</strong> @Model.EndDate</p>
+    <p><strong>Status:</strong> @Model.Status</p>
+
+</div>
+
+<form asp-action="Delete">
+    <input type="hidden" asp-for="ContractID" />
+
+    <button type="submit" class="btn btn-danger">Delete</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+</form>

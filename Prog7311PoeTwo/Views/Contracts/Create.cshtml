@@ -1,0 +1,67 @@
+@model Prog7311PoeTwo.Models.Contracts
+
+@{
+    ViewData["Title"] = "Create Contract";
+}
+
+<h2>Create Contract</h2>
+
+<div class="table-card">
+
+    <form asp-action="Create" method="post">
+
+        <div asp-validation-summary="All" class="text-danger"></div>
+
+        <div class="form-group">
+            <label asp-for="ContractName"></label>
+            <input asp-for="ContractName" class="form-control" />
+        </div>
+
+        <div class="form-group">
+            <label asp-for="ClientID">Client</label>
+            <select asp-for="ClientID"
+                    asp-items="ViewBag.Clients"
+                    class="form-control">
+                <option value="">-- Select Client --</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Status"></label>
+            <select asp-for="Status"
+                    class="form-control"
+                    asp-items="Html.GetEnumSelectList<Prog7311PoeTwo.Models.ContractStatus>()">
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Amount"></label>
+            <input asp-for="Amount" class="form-control" />
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Currency"></label>
+            <select asp-for="Currency"
+                    asp-items="ViewBag.Currencies"
+                    class="form-control">
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="StartDate"></label>
+            <input asp-for="StartDate" type="date" class="form-control" />
+        </div>
+
+        <div class="form-group">
+            <label asp-for="EndDate"></label>
+            <input asp-for="EndDate" type="date" class="form-control" />
+        </div>
+
+        <div class="form-actions">
+            <button type="submit" class="btn btn-success">Create</button>
+            <a asp-action="Index" class="btn btn-secondary">Back</a>
+        </div>
+
+    </form>
+
+</div>

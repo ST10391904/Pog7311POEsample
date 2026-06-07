@@ -1,0 +1,72 @@
+@model IEnumerable<Prog7311PoeTwo.Models.LogisticsManager>
+
+@{
+    ViewData["Title"] = "Logistics Manager";
+}
+
+<h2>Logistics Manager Dashboard</h2>
+
+<div class="table-card">
+
+    <form method="get" class="mb-3 d-flex gap-2">
+
+        <input type="text"
+               name="clientName"
+               class="form-control"
+               placeholder="Search client..."
+               value="@ViewBag.ClientName" />
+
+        <button type="submit" class="btn btn-primary">Search</button>
+
+        <a asp-action="Index" class="btn btn-secondary">Reset</a>
+
+    </form>
+
+    <table class="table table-hover">
+
+        <thead>
+            <tr>
+                <th>Contract</th>
+                <th>Client</th>
+                <th>Status</th>
+                <th>Amount</th>
+                <th>ZAR</th>
+                <th>Start</th>
+                <th>End</th>
+                <th class="text-center">SLA</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.ContractName</td>
+                    <td>@item.ClientName</td>
+                    <td>@item.Status</td>
+                    <td>@item.Amount</td>
+                    <td>@item.AmountInZAR</td>
+                    <td>@item.StartDate</td>
+                    <td>@item.EndDate</td>
+
+                    <td class="text-center">
+                        @if (item.CanRequestSLA)
+                        {
+                            <a asp-action="RequestSLA"
+                               asp-route-id="@item.ContractId"
+                               class="btn btn-primary btn-sm">
+                                Request SLA
+                            </a>
+                        }
+                        else
+                        {
+                            <span class="text-danger">Not Allowed</span>
+                        }
+                    </td>
+                </tr>
+            }
+        </tbody>
+
+    </table>
+
+</div>

@@ -1,0 +1,35 @@
+@model Prog7311PoeTwo.Models.ClientDetails
+
+@{
+    ViewData["Title"] = "Create Client";
+}
+
+<h2>Create Client</h2>
+
+<div class="table-card">
+
+    <form asp-action="Create">
+
+        <div class="form-group">
+            <label asp-for="ClientName"></label>
+            <input asp-for="ClientName" class="form-control" />
+        </div>
+
+        <div class="form-group">
+            <label asp-for="ClientEmail"></label>
+            <input asp-for="ClientEmail" class="form-control" />
+        </div>
+
+        <div class="form-group">
+            <label asp-for="ClientPhoneNumber"></label>
+            <input asp-for="ClientPhoneNumber" class="form-control" />
+        </div>
+
+        <div class="form-actions">
+            <button type="submit" class="btn btn-success">Create</button>
+            <a asp-action="Index" class="btn btn-secondary">Back</a>
+        </div>
+
+    </form>
+
+</div>
