@@ -1,19 +1,18 @@
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using Prog7311PoeTwo.Models;
-using Prog7311PoeTwo.Services;
+using System.Net.Http.Json;
 
 namespace Prog7311PoeTwo.Controllers
 {
     public class LogManController : Controller
     {
-        private readonly AppDbContext _context;
-        private readonly ICurrency _currencyService;
+        private readonly HttpClient _httpClient;
 
-        public LogManController(AppDbContext context, ICurrency currencyService)
+        private const string API_URL = "http://localhost:5010/api/logman";
+
+        public LogManController(IHttpClientFactory factory)
         {
-            _context = context;
-            _currencyService = currencyService;
+            _httpClient = factory.CreateClient();
         }
 
         public async Task<IActionResult> Index(
@@ -22,45 +21,10 @@ namespace Prog7311PoeTwo.Controllers
             DateOnly? startDate,
             DateOnly? endDate)
         {
-            var query = _context.Contracts
-                .Include(c => c.ClientDetails)
-                .AsQueryable();
+            var url = $"{API_URL}?clientName={clientName}&status={status}&startDate={startDate}&endDate={endDate}";
 
-            query = query
-                .Where(c => string.IsNullOrWhiteSpace(clientName)
-                    || c.ClientDetails.ClientName.Contains(clientName))
-
-                .Where(c => !status.HasValue
-                    || c.Status == status.Value)
-
-                .Where(c => !startDate.HasValue
-                    || c.StartDate >= startDate.Value)
-
-                .Where(c => !endDate.HasValue
-                    || c.EndDate <= endDate.Value);
-
-            var contracts = await query.ToListAsync();
-
-            var result = await Task.WhenAll(contracts.Select(async contract =>
-            {
-                var zar = await _currencyService.ConvertToZAR(
-                    contract.Currency,
-                    contract.Amount
-                );
-
-                return new LogisticsManager
-                {
-                    ContractId = contract.ContractID,
-                    ContractName = contract.ContractName,
-                    ClientName = contract.ClientDetails?.ClientName,
-                    Status = contract.Status,
-                    Amount = contract.Amount,
-                    Currency = contract.Currency,
-                    AmountInZAR = zar,
-                    StartDate = contract.StartDate,
-                    EndDate = contract.EndDate
-                };
-            }));
+            var result = await _httpClient
+                .GetFromJsonAsync<List<LogisticsManager>>(url);
 
             ViewBag.ClientName = clientName;
             ViewBag.Status = status;
@@ -70,9 +34,16 @@ namespace Prog7311PoeTwo.Controllers
             return View(result);
         }
 
-        public IActionResult RequestSLA(int id)
+        public async Task<IActionResult> RequestSLA(int id)
         {
-            return Content($"SLA requested for contract {id}");
+            var response = await _httpClient.GetAsync($"{API_URL}/sla/{id}");
+
+            if (!response.IsSuccessStatusCode)
+                return BadRequest();
+
+            var message = await response.Content.ReadAsStringAsync();
+
+            return Content(message);
         }
     }
 }

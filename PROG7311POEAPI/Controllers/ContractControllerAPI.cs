@@ -1,9 +1,10 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Prog7311PoeTwo.Models;
-using Prog7311PoeTwo.Services;
+using PROG7311POEAPI.Models;
+using PROG7311POEAPI.Services;
+using PROG7311POEAPI.DB;
 
-namespace Prog7311PoeTwo.Controllers.Api
+namespace PROG7311POEAPI
 {
     [ApiController]
     [Route("api/contracts")]
@@ -18,7 +19,6 @@ namespace Prog7311PoeTwo.Controllers.Api
             _currencyService = currencyService;
         }
 
-        // get contracts
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
@@ -29,7 +29,6 @@ namespace Prog7311PoeTwo.Controllers.Api
             return Ok(contracts);
         }
 
-        // get contracts
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
@@ -43,36 +42,37 @@ namespace Prog7311PoeTwo.Controllers.Api
             return Ok(contract);
         }
 
-        // post contracts
         [HttpPost]
-        public async Task<IActionResult> Create([FromBody] Contracts contract)
+        public async Task<IActionResult> Create(Contracts contract)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            try
-            {
-                contract.AmountInZAR =
-                    await _currencyService.ConvertToZAR(
-                        contract.Currency,
-                        contract.Amount);
-            }
-            catch
-            {
-                contract.AmountInZAR = 0;
-            }
+            contract.AmountInZAR = await Convert(contract);
 
             _context.Contracts.Add(contract);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction(
-                nameof(GetById),
-                new { id = contract.ContractID },
-                contract
-            );
+            return CreatedAtAction(nameof(GetById), new { id = contract.ContractID }, contract);
         }
 
-        // delete contracts
+        [HttpPut("{id}")]
+        public async Task<IActionResult> Update(int id, Contracts contract)
+        {
+            if (id != contract.ContractID)
+                return BadRequest();
+
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            contract.AmountInZAR = await Convert(contract);
+
+            _context.Entry(contract).State = EntityState.Modified;
+            await _context.SaveChangesAsync();
+
+            return NoContent();
+        }
+
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
@@ -85,6 +85,18 @@ namespace Prog7311PoeTwo.Controllers.Api
             await _context.SaveChangesAsync();
 
             return NoContent();
+        }
+
+        private async Task<decimal> Convert(Contracts contract)
+        {
+            try
+            {
+                return await _currencyService.ConvertToZAR(contract.Currency, contract.Amount);
+            }
+            catch
+            {
+                return 0;
+            }
         }
     }
 }

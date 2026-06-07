@@ -2,7 +2,7 @@ using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Prog7311PoeTwo.Models{
+namespace PROG7311POEAPI.Models{
 
     public class Contracts
     {

@@ -1,4 +1,4 @@
-namespace Prog7311PoeTwo.Services
+namespace PROG7311POEAPI.Services
 {
     public interface ICurrency
     {

@@ -1,21 +1,24 @@
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using Prog7311PoeTwo.Models;
+using System.Net.Http.Json;
 
 namespace Prog7311PoeTwo.Controllers
 {
     public class ClientController : Controller
     {
-        private readonly AppDbContext _context;
+        private readonly HttpClient _http;
 
-        public ClientController(AppDbContext context)
+        public ClientController(IHttpClientFactory factory)
         {
-            _context = context;
+            _http = factory.CreateClient();
         }
+
+        private string baseUrl = "https://localhost:5001/api/clients";
 
         public async Task<IActionResult> Index()
         {
-            return View(await _context.clientDetails.ToListAsync());
+            var clients = await _http.GetFromJsonAsync<List<ClientDetails>>(baseUrl);
+            return View(clients);
         }
 
         public IActionResult Create()
@@ -24,81 +27,57 @@ namespace Prog7311PoeTwo.Controllers
         }
 
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create(ClientDetails clientDetails)
+        public async Task<IActionResult> Create(ClientDetails client)
         {
-            if (ModelState.IsValid)
-            {
-                _context.Add(clientDetails);
-                await _context.SaveChangesAsync();
+            var response = await _http.PostAsJsonAsync(baseUrl, client);
+
+            if (response.IsSuccessStatusCode)
                 return RedirectToAction(nameof(Index));
-            }
-
-            return View(clientDetails);
-        }
-
-        public async Task<IActionResult> Details(int? id)
-        {
-            if (id == null) return NotFound();
-
-            var client = await _context.clientDetails
-                .FirstOrDefaultAsync(c => c.ClientID == id);
-
-            if (client == null) return NotFound();
 
             return View(client);
         }
 
-        public async Task<IActionResult> Edit(int? id)
+        public async Task<IActionResult> Details(int id)
         {
-            if (id == null) return NotFound();
+            var client = await _http.GetFromJsonAsync<ClientDetails>($"{baseUrl}/{id}");
 
-            var client = await _context.clientDetails.FindAsync(id);
-            if (client == null) return NotFound();
+            if (client == null)
+                return NotFound();
+
+            return View(client);
+        }
+
+        public async Task<IActionResult> Edit(int id)
+        {
+            var client = await _http.GetFromJsonAsync<ClientDetails>($"{baseUrl}/{id}");
+
+            if (client == null)
+                return NotFound();
 
             return View(client);
         }
 
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, ClientDetails clientDetails)
+        public async Task<IActionResult> Edit(int id, ClientDetails client)
         {
-            if (id != clientDetails.ClientID) return NotFound();
+            var response = await _http.PutAsJsonAsync($"{baseUrl}/{id}", client);
 
-            if (ModelState.IsValid)
-            {
-                _context.Update(clientDetails);
-                await _context.SaveChangesAsync();
+            if (response.IsSuccessStatusCode)
                 return RedirectToAction(nameof(Index));
-            }
-
-            return View(clientDetails);
-        }
-
-        public async Task<IActionResult> Delete(int? id)
-        {
-            if (id == null) return NotFound();
-
-            var client = await _context.clientDetails
-                .FirstOrDefaultAsync(c => c.ClientID == id);
-
-            if (client == null) return NotFound();
 
             return View(client);
         }
 
+        public async Task<IActionResult> Delete(int id)
+        {
+            var client = await _http.GetFromJsonAsync<ClientDetails>($"{baseUrl}/{id}");
+            return View(client);
+        }
+
         [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var client = await _context.clientDetails.FindAsync(id);
-
-            if (client != null)
-            {
-                _context.clientDetails.Remove(client);
-                await _context.SaveChangesAsync();
-            }
-
+            await _http.DeleteAsync($"{baseUrl}/{id}");
             return RedirectToAction(nameof(Index));
         }
     }

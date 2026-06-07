@@ -3,7 +3,6 @@ using Microsoft.AspNetCore.Mvc;
 using Prog7311PoeTwo.Controllers;
 using Prog7311PoeTwo;
 using Prog7311PoeTwo.Models;
-using Prog7311PoeTwo.Services;
 using Moq;
 public class ClientTest
 {

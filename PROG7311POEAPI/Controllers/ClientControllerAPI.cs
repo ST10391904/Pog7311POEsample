@@ -1,16 +1,17 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Prog7311PoeTwo.Models;
+using PROG7311POEAPI.Models;
+using PROG7311POEAPI.DB;
 
-namespace Prog7311PoeTwo.Controllers.Api
+namespace PROG7311POEAPI.Controllers
 {
     [ApiController]
     [Route("api/clients")]
-    public class ClientApi : ControllerBase
+    public class ClientControllerApi : ControllerBase
     {
         private readonly AppDbContext _context;
 
-        public ClientApi(AppDbContext context)
+        public ClientControllerApi(AppDbContext context)
         {
             _context = context;
         }

@@ -1,7 +1,8 @@
 using Microsoft.EntityFrameworkCore;
-using Prog7311PoeTwo.Models;
+using PROG7311POEAPI.Models;
 
-namespace Prog7311PoeTwo;
+
+namespace PROG7311POEAPI.DB;
 
     public class AppDbContext : DbContext
     {
