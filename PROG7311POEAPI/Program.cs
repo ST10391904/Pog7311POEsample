@@ -21,7 +21,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
         builder.Configuration.GetConnectionString("DefaultConnection")));
 
 // Services
-builder.Services.AddScoped<ICurrency, ExchangeAPI>();
+builder.Services.AddHttpClient<ICurrency, ExchangeAPI>();
 
 // Swagger
 builder.Services.AddEndpointsApiExplorer();
