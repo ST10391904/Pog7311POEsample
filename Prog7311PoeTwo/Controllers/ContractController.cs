@@ -1,43 +1,43 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
 using Prog7311PoeTwo.Models;
 using Prog7311PoeTwo.Services;
+using System.Net.Http.Json;
 
 namespace Prog7311PoeTwo.Controllers
 {
     public class ContractsController : Controller
     {
-        private readonly AppDbContext _context;
         private readonly ICurrency _currencyService;
         private readonly IWebHostEnvironment _environment;
+        private readonly HttpClient _httpClient;
+
+        private const string API_URL = "http://localhost:5010/api/contracts";
 
         public ContractsController(
-            AppDbContext context,
             ICurrency currencyService,
-            IWebHostEnvironment environment)
+            IWebHostEnvironment environment,
+            IHttpClientFactory httpClientFactory)
         {
-            _context = context;
             _currencyService = currencyService;
             _environment = environment;
+            _httpClient = httpClientFactory.CreateClient();
         }
 
         public async Task<IActionResult> Index()
         {
-            var contracts = await _context.Contracts
-                .Include(c => c.ClientDetails)
-                .ToListAsync();
+            var contracts = await _httpClient
+                .GetFromJsonAsync<List<Contracts>>(API_URL);
 
             return View(contracts);
         }
 
+        //Create
         public IActionResult Create()
         {
-            ViewBag.Clients = new SelectList(_context.clientDetails, "ClientID", "ClientName");
-
             ViewBag.Currencies = new SelectList(new List<string>
             {
-                "USD", "EUR", "Yen", "ZAR"
+                "USD", "EUR", "JPY", "ZAR"
             });
 
             return View();
@@ -47,82 +47,51 @@ namespace Prog7311PoeTwo.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(Contracts contract)
         {
+            if (!ModelState.IsValid)
+            {
+                ViewBag.Currencies = new SelectList(new List<string>
+                {
+                    "USD", "EUR", "JPY", "ZAR"
+                });
+
+                return View(contract);
+            }
+
             try
             {
-                if (ModelState.IsValid)
+                contract.AmountInZAR =
+                    await _currencyService.ConvertToZAR(
+                        contract.Currency,
+                        contract.Amount);
+            }
+            catch
+            {
+                contract.AmountInZAR = 0;
+            }
+
+            await SaveFile(contract);
+
+            var response = await _httpClient.PostAsJsonAsync(API_URL, contract);
+
+            if (!response.IsSuccessStatusCode)
+            {
+                ModelState.AddModelError("", "API error while creating contract.");
+                ViewBag.Currencies = new SelectList(new List<string>
                 {
-                    try
-                    {
-                        contract.AmountInZAR =
-                            await _currencyService.ConvertToZAR(
-                                contract.Currency,
-                                contract.Amount);
-                    }
-                    catch
-                    {
-                        contract.AmountInZAR = 0;
-                    }
+                    "USD", "EUR", "JPY", "ZAR"
+                });
 
-                   //File Upload
-                    if (contract.UploadFile != null)
-                    {
-                        string folder = Path.Combine(
-                            _environment.WebRootPath,
-                            "FileServer",
-                            "Contracts");
-
-                        if (!Directory.Exists(folder))
-                        {
-                            Directory.CreateDirectory(folder);
-                        }
-
-                        string fileName = Guid.NewGuid().ToString() +
-                                          Path.GetExtension(contract.UploadFile.FileName);
-
-                        string filePath = Path.Combine(folder, fileName);
-
-                        using (var stream = new FileStream(filePath, FileMode.Create))
-                        {
-                            await contract.UploadFile.CopyToAsync(stream);
-                        }
-
-                        contract.FileName = contract.UploadFile.FileName;
-                        contract.FilePath = "/FileServer/Contracts/" + fileName;
-                    }
-
-                    _context.Add(contract);
-                    await _context.SaveChangesAsync();
-
-                    return RedirectToAction(nameof(Index));
-                }
-            }
-            catch (Exception)
-            {
-                ModelState.AddModelError("", "Failed to create contract.");
+                return View(contract);
             }
 
-            ViewBag.Clients = new SelectList(
-                _context.clientDetails,
-                "ClientID",
-                "ClientName",
-                contract.ClientID);
-
-            ViewBag.Currencies = new SelectList(new List<string>
-            {
-                "USD", "EUR", "Yen", "ZAR"
-            });
-
-            return View(contract);
+            return RedirectToAction(nameof(Index));
         }
 
-        public async Task<IActionResult> Details(int? id)
+        //Details
+        public async Task<IActionResult> Details(int id)
         {
-            if (id == null)
-                return NotFound();
-
-            var contract = await _context.Contracts
-                .Include(c => c.ClientDetails)
-                .FirstOrDefaultAsync(c => c.ContractID == id);
+            var contract = await _httpClient
+                .GetFromJsonAsync<Contracts>($"{API_URL}/{id}");
 
             if (contract == null)
                 return NotFound();
@@ -130,28 +99,18 @@ namespace Prog7311PoeTwo.Controllers
             return View(contract);
         }
 
-        public async Task<IActionResult> Edit(int? id)
+        //Edit 
+        public async Task<IActionResult> Edit(int id)
         {
-            if (id == null)
-                return NotFound();
-
-            var contract = await _context.Contracts.FindAsync(id);
+            var contract = await _httpClient
+                .GetFromJsonAsync<Contracts>($"{API_URL}/{id}");
 
             if (contract == null)
                 return NotFound();
 
-            ViewBag.Clients = new SelectList(
-                _context.clientDetails,
-                "ClientID",
-                "ClientName",
-                contract.ClientID);
-
             ViewBag.Currencies = new SelectList(new List<string>
             {
-                "USD",
-                "EUR",
-                "JPY",
-                "ZAR"
+                "USD", "EUR", "JPY", "ZAR"
             });
 
             return View(contract);
@@ -164,90 +123,93 @@ namespace Prog7311PoeTwo.Controllers
             if (id != contract.ContractID)
                 return NotFound();
 
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
+            {
+                ViewBag.Currencies = new SelectList(new List<string>
+                {
+                    "USD", "EUR", "JPY", "ZAR"
+                });
+
+                return View(contract);
+            }
+
+            try
             {
                 contract.AmountInZAR =
                     await _currencyService.ConvertToZAR(
                         contract.Currency,
                         contract.Amount);
-
-                if (contract.UploadFile != null)
-                {
-                    string folder = Path.Combine(
-                        _environment.WebRootPath,
-                        "FileServer",
-                        "Contracts");
-
-                    if (!Directory.Exists(folder))
-                    {
-                        Directory.CreateDirectory(folder);
-                    }
-
-                    string fileName = Guid.NewGuid().ToString() +
-                                      Path.GetExtension(contract.UploadFile.FileName);
-
-                    string filePath = Path.Combine(folder, fileName);
-
-                    using (var stream = new FileStream(filePath, FileMode.Create))
-                    {
-                        await contract.UploadFile.CopyToAsync(stream);
-                    }
-
-                    contract.FileName = contract.UploadFile.FileName;
-                    contract.FilePath = "/FileServer/Contracts/" + fileName;
-                }
-
-                _context.Update(contract);
-                await _context.SaveChangesAsync();
-
-                return RedirectToAction(nameof(Index));
+            }
+            catch
+            {
+                contract.AmountInZAR = 0;
             }
 
-            ViewBag.Clients = new SelectList(
-                _context.clientDetails,
-                "ClientID",
-                "ClientName",
-                contract.ClientID);
+            await SaveFile(contract);
 
-            ViewBag.Currencies = new SelectList(new List<string>
+            var response = await _httpClient
+                .PutAsJsonAsync($"{API_URL}/{id}", contract);
+
+            if (!response.IsSuccessStatusCode)
             {
-                "USD",
-                "EUR",
-                "JPY",
-                "ZAR"
-            });
+                ModelState.AddModelError("", "API error while updating contract.");
 
-            return View(contract);
+                ViewBag.Currencies = new SelectList(new List<string>
+                {
+                    "USD", "EUR", "JPY", "ZAR"
+                });
+
+                return View(contract);
+            }
+
+            return RedirectToAction(nameof(Index));
         }
 
-        public async Task<IActionResult> Delete(int? id)
+        // Delete
+        public async Task<IActionResult> Delete(int id)
         {
-            if (id == null)
-                return NotFound();
-
-            var contract = await _context.Contracts
-                .Include(c => c.ClientDetails)
-                .FirstOrDefaultAsync(m => m.ContractID == id);
+            var contract = await _httpClient
+                .GetFromJsonAsync<Contracts>($"{API_URL}/{id}");
 
             if (contract == null)
                 return NotFound();
 
             return View(contract);
         }
-
+      
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var contract = await _context.Contracts.FindAsync(id);
+            await _httpClient.DeleteAsync($"{API_URL}/{id}");
+            return RedirectToAction(nameof(Index));
+        }
 
-            if (contract != null)
+        private async Task SaveFile(Contracts contract)
+        {
+            if (contract.UploadFile == null)
+                return;
+
+            string folder = Path.Combine(
+                _environment.WebRootPath,
+                "FileServer",
+                "Contracts");
+
+            if (!Directory.Exists(folder))
+                Directory.CreateDirectory(folder);
+
+            string fileName = Guid.NewGuid() +
+                              Path.GetExtension(contract.UploadFile.FileName);
+
+            string filePath = Path.Combine(folder, fileName);
+
+            using (var stream = new FileStream(filePath, FileMode.Create))
             {
-                _context.Contracts.Remove(contract);
-                await _context.SaveChangesAsync();
+                await contract.UploadFile.CopyToAsync(stream);
             }
 
-            return RedirectToAction(nameof(Index));
+            contract.FileName = contract.UploadFile.FileName;
+            contract.FilePath = "/FileServer/Contracts/" + fileName;
         }
     }
 }
