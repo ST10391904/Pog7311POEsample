@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "MAG5lk0G8G5f4qaC6SNvZ4iy8cXp/Jg37abxddwHs4M=",
+  "Hash": "kDemvNkNfEfWe9cbo+MpjoGZIU0qHtersVwetvRcVvU=",
   "Source": "PROG7311POEAPI",
   "BasePath": "_content/PROG7311POEAPI",
   "Mode": "Default",
@@ -11,10 +11,10 @@
       "Version": 2,
       "Source": "Prog7311PoeTwo",
       "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
-      "AdditionalPublishProperties": "",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
       "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework",
       "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
-      "AdditionalBuildProperties": "",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
       "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
     }
   ],
@@ -1581,6 +1581,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Music\\Desktop\\Year 3 Term 1\\PROG7311\\Prog7311 - Part 2\\Prog7311PoeTwo\\wwwroot\\FileServer\\Contracts\\e10edd86-6c7d-4de1-96fb-eb7e92e95b43.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Music\\Desktop\\Year 3 Term 1\\PROG7311\\Prog7311 - Part 2\\Prog7311PoeTwo\\wwwroot\\FileServer\\Contracts\\f32ae391-e645-48e6-8b27-d632fb83cec7.jpg",
+      "SourceId": "Prog7311PoeTwo",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\Music\\Desktop\\Year 3 Term 1\\PROG7311\\Prog7311 - Part 2\\Prog7311PoeTwo\\wwwroot\\",
+      "BasePath": "_content/Prog7311PoeTwo",
+      "RelativePath": "FileServer/Contracts/f32ae391-e645-48e6-8b27-d632fb83cec7#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "wnmbsz44zq",
+      "Integrity": "fI/q8ucECskEIJFSLImORfanVUNykMov6owv4wNgAMU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\Music\\Desktop\\Year 3 Term 1\\PROG7311\\Prog7311 - Part 2\\Prog7311PoeTwo\\wwwroot\\FileServer\\Contracts\\f32ae391-e645-48e6-8b27-d632fb83cec7.jpg"
     },
     {
       "Identity": "C:\\Users\\Music\\Desktop\\Year 3 Term 1\\PROG7311\\Prog7311 - Part 2\\Prog7311PoeTwo\\wwwroot\\FileServer\\Contracts\\f38d03a2-6b78-45bb-99bb-9186ccaa45d9.jpg",
@@ -3992,6 +4013,88 @@
         {
           "Name": "label",
           "Value": "_content/Prog7311PoeTwo/FileServer/Contracts/e10edd86-6c7d-4de1-96fb-eb7e92e95b43.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "_content/Prog7311PoeTwo/FileServer/Contracts/f32ae391-e645-48e6-8b27-d632fb83cec7.jpg",
+      "AssetFile": "C:\\Users\\Music\\Desktop\\Year 3 Term 1\\PROG7311\\Prog7311 - Part 2\\Prog7311PoeTwo\\wwwroot\\FileServer\\Contracts\\f32ae391-e645-48e6-8b27-d632fb83cec7.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "93096"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fI/q8ucECskEIJFSLImORfanVUNykMov6owv4wNgAMU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 08 Jun 2026 04:48:33 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-fI/q8ucECskEIJFSLImORfanVUNykMov6owv4wNgAMU="
+        }
+      ]
+    },
+    {
+      "Route": "_content/Prog7311PoeTwo/FileServer/Contracts/f32ae391-e645-48e6-8b27-d632fb83cec7.wnmbsz44zq.jpg",
+      "AssetFile": "C:\\Users\\Music\\Desktop\\Year 3 Term 1\\PROG7311\\Prog7311 - Part 2\\Prog7311PoeTwo\\wwwroot\\FileServer\\Contracts\\f32ae391-e645-48e6-8b27-d632fb83cec7.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "93096"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fI/q8ucECskEIJFSLImORfanVUNykMov6owv4wNgAMU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 08 Jun 2026 04:48:33 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wnmbsz44zq"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-fI/q8ucECskEIJFSLImORfanVUNykMov6owv4wNgAMU="
+        },
+        {
+          "Name": "label",
+          "Value": "_content/Prog7311PoeTwo/FileServer/Contracts/f32ae391-e645-48e6-8b27-d632fb83cec7.jpg"
         }
       ]
     },
@@ -22154,7 +22257,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 07 Jun 2026 23:51:49 GMT"
+          "Value": "Mon, 08 Jun 2026 04:33:26 GMT"
         },
         {
           "Name": "Vary",
@@ -22211,7 +22314,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 07 Jun 2026 23:51:49 GMT"
+          "Value": "Mon, 08 Jun 2026 04:33:26 GMT"
         }
       ],
       "EndpointProperties": [
@@ -22260,7 +22363,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 07 Jun 2026 23:51:49 GMT"
+          "Value": "Mon, 08 Jun 2026 04:33:26 GMT"
         },
         {
           "Name": "Vary",
@@ -22315,7 +22418,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 07 Jun 2026 23:51:49 GMT"
+          "Value": "Mon, 08 Jun 2026 04:33:26 GMT"
         },
         {
           "Name": "Vary",
@@ -22364,7 +22467,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 07 Jun 2026 23:51:49 GMT"
+          "Value": "Mon, 08 Jun 2026 04:33:26 GMT"
         }
       ],
       "EndpointProperties": [
@@ -22405,7 +22508,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 07 Jun 2026 23:51:49 GMT"
+          "Value": "Mon, 08 Jun 2026 04:33:26 GMT"
         },
         {
           "Name": "Vary",
@@ -22444,7 +22547,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 07 Jun 2026 23:51:51 GMT"
+          "Value": "Mon, 08 Jun 2026 04:33:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22505,7 +22608,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 07 Jun 2026 23:51:51 GMT"
+          "Value": "Mon, 08 Jun 2026 04:33:30 GMT"
         },
         {
           "Name": "Link",
@@ -22542,7 +22645,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 07 Jun 2026 23:51:51 GMT"
+          "Value": "Mon, 08 Jun 2026 04:33:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22589,7 +22692,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 07 Jun 2026 23:51:51 GMT"
+          "Value": "Mon, 08 Jun 2026 04:33:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22658,7 +22761,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 07 Jun 2026 23:51:51 GMT"
+          "Value": "Mon, 08 Jun 2026 04:33:30 GMT"
         },
         {
           "Name": "Link",
@@ -22703,7 +22806,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 07 Jun 2026 23:51:51 GMT"
+          "Value": "Mon, 08 Jun 2026 04:33:30 GMT"
         },
         {
           "Name": "Cache-Control",

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "M1xBFR1cfIY=",
+  "dgSpecHash": "sSxzQOEc1/s=",
   "success": true,
   "projectFilePath": "C:\\Users\\Music\\Desktop\\Year 3 Term 1\\PROG7311\\Prog7311 - Part 2\\PROG7311POEAPI\\PROG7311POEAPI.csproj",
   "expectedPackageFiles": [
@@ -14,6 +14,7 @@
     "C:\\Users\\Music\\.nuget\\packages\\microsoft.entityframeworkcore\\9.0.0\\microsoft.entityframeworkcore.9.0.0.nupkg.sha512",
     "C:\\Users\\Music\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\9.0.0\\microsoft.entityframeworkcore.abstractions.9.0.0.nupkg.sha512",
     "C:\\Users\\Music\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\9.0.0\\microsoft.entityframeworkcore.analyzers.9.0.0.nupkg.sha512",
+    "C:\\Users\\Music\\.nuget\\packages\\microsoft.entityframeworkcore.inmemory\\9.0.0\\microsoft.entityframeworkcore.inmemory.9.0.0.nupkg.sha512",
     "C:\\Users\\Music\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\9.0.0\\microsoft.entityframeworkcore.relational.9.0.0.nupkg.sha512",
     "C:\\Users\\Music\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\9.0.0\\microsoft.entityframeworkcore.sqlserver.9.0.0.nupkg.sha512",
     "C:\\Users\\Music\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
