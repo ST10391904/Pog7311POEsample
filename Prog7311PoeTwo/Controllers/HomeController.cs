@@ -15,6 +15,10 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
+        if (HttpContext.Session.GetString("UserEmail") == null)
+    {
+        return RedirectToAction("Register", "Account");
+    }
         return View();
     }
 

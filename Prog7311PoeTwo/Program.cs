@@ -2,13 +2,21 @@ using Prog7311PoeTwo;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// MVC services
+// Services
 builder.Services.AddControllersWithViews();
 
-// HttpClient factory
 builder.Services.AddHttpClient();
 
-// API base URL
+builder.Services.AddDistributedMemoryCache();
+
+builder.Services.AddSession(options =>
+{
+    options.IdleTimeout = TimeSpan.FromMinutes(30);
+    options.Cookie.HttpOnly = true;
+    options.Cookie.IsEssential = true;
+});
+
+// API URL
 var apiBaseUrl = builder.Configuration["ApiSettings:BaseUrl"];
 
 builder.Services.AddHttpClient("API", client =>
@@ -28,6 +36,8 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
+
+app.UseSession();
 
 app.UseAuthorization();
 

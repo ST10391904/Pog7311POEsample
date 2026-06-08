@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "kDemvNkNfEfWe9cbo+MpjoGZIU0qHtersVwetvRcVvU=",
+  "Hash": "qHnS9kfGbDHqcb4OklHPOzXPDdBK4xm/s1DDUYISTWs=",
   "Source": "PROG7311POEAPI",
   "BasePath": "_content/PROG7311POEAPI",
   "Mode": "Default",
@@ -11,10 +11,10 @@
       "Version": 2,
       "Source": "Prog7311PoeTwo",
       "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
-      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishProperties": "",
       "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework",
       "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
-      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildProperties": "",
       "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
     }
   ],

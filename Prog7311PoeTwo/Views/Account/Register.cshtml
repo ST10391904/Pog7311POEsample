@@ -1,0 +1,47 @@
+@model RegisterVM
+
+@{
+    ViewData["Title"] = "Register";
+}
+
+<h2>Register</h2>
+
+<div class="table-card">
+
+    <form asp-action="Register" method="post">
+
+        <div asp-validation-summary="All" class="text-danger"></div>
+
+        <div class="form-group">
+            <label asp-for="Email"></label>
+            <input asp-for="Email" class="form-control" />
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Password"></label>
+            <input asp-for="Password" type="password" class="form-control" />
+        </div>
+
+          <div class="form-group">
+            <label asp-for="ConfirmPassword"></label>
+            <input asp-for="ConfirmPassword" type="password" class="form-control" />
+            <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label>Already have an account?</label><br />
+            <a asp-controller="Account" asp-action="Login">
+                Login here
+            </a>
+        </div>
+
+        <div class="form-actions">
+            <button type="submit" class="btn btn-success">
+                Register
+            </button>
+        </div>
+
+    </form>
+
+</div>
+
