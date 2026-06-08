@@ -6,13 +6,13 @@ namespace Prog7311PoeTwo.Controllers
 {
     public class LogManController : Controller
     {
-        private readonly HttpClient _httpClient;
+        private readonly HttpClient _http;
+        private readonly string _baseUrl;
 
-        private const string API_URL = "http://localhost:5010/api/logman";
-
-        public LogManController(IHttpClientFactory factory)
+        public LogManController(IHttpClientFactory factory, IConfiguration config)
         {
-            _httpClient = factory.CreateClient();
+            _http = factory.CreateClient();
+            _baseUrl = $"{config["ApiSettings:BaseUrl"]}/api/logman";
         }
 
         public async Task<IActionResult> Index(
@@ -21,29 +21,20 @@ namespace Prog7311PoeTwo.Controllers
             DateOnly? startDate,
             DateOnly? endDate)
         {
-            var url = $"{API_URL}?clientName={clientName}&status={status}&startDate={startDate}&endDate={endDate}";
+            var url = $"{_baseUrl}?clientName={clientName}&status={status}&startDate={startDate}&endDate={endDate}";
 
-            var result = await _httpClient
-                .GetFromJsonAsync<List<LogisticsManager>>(url);
-
-            ViewBag.ClientName = clientName;
-            ViewBag.Status = status;
-            ViewBag.StartDate = startDate;
-            ViewBag.EndDate = endDate;
-
-            return View(result);
+            var data = await _http.GetFromJsonAsync<List<LogisticsManager>>(url);
+            return View(data);
         }
 
         public async Task<IActionResult> RequestSLA(int id)
         {
-            var response = await _httpClient.GetAsync($"{API_URL}/sla/{id}");
+            var response = await _http.GetAsync($"{_baseUrl}/sla/{id}");
 
             if (!response.IsSuccessStatusCode)
-                return BadRequest();
+                return BadRequest("Unable to request SLA");
 
-            var message = await response.Content.ReadAsStringAsync();
-
-            return Content(message);
+            return Content(await response.Content.ReadAsStringAsync());
         }
     }
 }

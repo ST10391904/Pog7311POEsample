@@ -18,8 +18,8 @@
             <tr>
                 <th>Name</th>
                 <th>Client</th>
-                <th>Amount</th>
                 <th>ZAR</th>
+                <th>Amount</th>
                 <th>Start</th>
                 <th>End</th>
                 <th>Status</th>
@@ -32,12 +32,14 @@
             @foreach (var item in Model)
             {
                 <tr>
-                    <td>@item.ContractName</td>
-                    <td>@item.ClientDetails?.ClientName</td>
-                    <td>@item.Amount</td>
-                    <td>@item.AmountInZAR</td>
-                    <td>@item.StartDate</td>
-                    <td>@item.EndDate</td>
+                    <td>@(item.ContractName)</td>
+                    <td>@(item.ClientDetails == default ? "N/A" : item.ClientDetails.ClientName)</td>
+                    <td>@item.Amount.ToString("F2")</td>
+                    <td>@item.AmountInZAR.ToString("F2")</td>
+                    
+                    <td>@(item.StartDate == default ? "N/A" : item.StartDate.ToString("yyyy-MM-dd"))</td>
+                    <td>@(item.EndDate == default ? "N/A" : item.EndDate.ToString("yyyy-MM-dd"))</td>
+                    
                     <td>@item.Status</td>
 
                     <td>
@@ -51,11 +53,11 @@
 
                             <br />
 
-                            <small>@item.FileName</small>
+                            <small class="text-muted">@item.FileName</small>
                         }
                         else
                         {
-                            <span>No File</span>
+                            <span class="text-danger">No File</span>
                         }
                     </td>
 

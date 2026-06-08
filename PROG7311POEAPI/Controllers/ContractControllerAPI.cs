@@ -42,36 +42,57 @@ namespace PROG7311POEAPI
             return Ok(contract);
         }
 
-        [HttpPost]
-        public async Task<IActionResult> Create(Contracts contract)
-        {
-            if (!ModelState.IsValid)
-                return BadRequest(ModelState);
+[HttpPost]
+public async Task<IActionResult> Create([FromBody] ContractDTO dto)
+{
+    if (!ModelState.IsValid)
+        return BadRequest(ModelState);
 
-            contract.AmountInZAR = await Convert(contract);
+    var contract = new Contracts
+    {
+        ContractName = dto.ContractName,
+        ClientID = dto.ClientID,
+        Currency = dto.Currency,
+        Amount = dto.Amount,
+        StartDate = dto.StartDate,
+        EndDate = dto.EndDate,
+        Status = dto.Status,
+        FileName = dto.FileName,
+        FilePath = dto.FilePath
+    };
 
-            _context.Contracts.Add(contract);
-            await _context.SaveChangesAsync();
+    contract.AmountInZAR = await Convert(contract);
 
-            return CreatedAtAction(nameof(GetById), new { id = contract.ContractID }, contract);
-        }
+    _context.Contracts.Add(contract);
+    await _context.SaveChangesAsync();
 
-        [HttpPut("{id}")]
-        public async Task<IActionResult> Update(int id, Contracts contract)
-        {
-            if (id != contract.ContractID)
-                return BadRequest();
+    return CreatedAtAction(nameof(GetById), new { id = contract.ContractID }, contract);
+}
 
-            if (!ModelState.IsValid)
-                return BadRequest(ModelState);
+[HttpPut("{id}")]
+public async Task<IActionResult> Update(int id, [FromBody] ContractDTO dto)
+{
+    var contract = await _context.Contracts.FindAsync(id);
 
-            contract.AmountInZAR = await Convert(contract);
+    if (contract == null)
+        return NotFound();
 
-            _context.Entry(contract).State = EntityState.Modified;
-            await _context.SaveChangesAsync();
+    contract.ContractName = dto.ContractName;
+    contract.ClientID = dto.ClientID;
+    contract.Currency = dto.Currency;
+    contract.Amount = dto.Amount;
+    contract.StartDate = dto.StartDate;
+    contract.EndDate = dto.EndDate;
+    contract.Status = dto.Status;
+    contract.FileName = dto.FileName;
+    contract.FilePath = dto.FilePath;
 
-            return NoContent();
-        }
+    contract.AmountInZAR = await Convert(contract);
+
+    await _context.SaveChangesAsync();
+
+    return NoContent();
+}
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
@@ -89,14 +110,28 @@ namespace PROG7311POEAPI
 
         private async Task<decimal> Convert(Contracts contract)
         {
-            try
-            {
-                return await _currencyService.ConvertToZAR(contract.Currency, contract.Amount);
-            }
-            catch
-            {
-                return 0;
-            }
-        }
+            
+                return await _currencyService.ConvertToZAR(
+                    contract.Currency,
+                    contract.Amount
+                );
+            
+        
     }
+
+    public class ContractDTO
+    {
+    public string? ContractName { get; set; }
+    public int ClientID { get; set; }
+    public string Currency { get; set; }
+    public decimal Amount { get; set; }
+
+    public DateOnly StartDate { get; set; }
+    public DateOnly EndDate { get; set; }
+    public ContractStatus Status { get; set; }
+
+    public string? FileName { get; set; }
+    public string? FilePath { get; set; }
+    }
+}
 }

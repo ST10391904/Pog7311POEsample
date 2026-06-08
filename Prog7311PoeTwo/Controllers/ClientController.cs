@@ -7,77 +7,77 @@ namespace Prog7311PoeTwo.Controllers
     public class ClientController : Controller
     {
         private readonly HttpClient _http;
+        private readonly string _baseUrl;
 
-        public ClientController(IHttpClientFactory factory)
+        public ClientController(IHttpClientFactory factory, IConfiguration config)
         {
             _http = factory.CreateClient();
+            _baseUrl = $"{config["ApiSettings:BaseUrl"]}/api/clients";
         }
-
-        private string baseUrl = "https://localhost:5001/api/clients";
 
         public async Task<IActionResult> Index()
         {
-            var clients = await _http.GetFromJsonAsync<List<ClientDetails>>(baseUrl);
+            var clients = await _http.GetFromJsonAsync<List<ClientDetails>>(_baseUrl);
             return View(clients);
         }
 
-        public IActionResult Create()
-        {
-            return View();
-        }
+        public IActionResult Create() => View();
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(ClientDetails client)
         {
-            var response = await _http.PostAsJsonAsync(baseUrl, client);
+            if (!ModelState.IsValid)
+                return View(client);
+
+            var response = await _http.PostAsJsonAsync(_baseUrl, client);
 
             if (response.IsSuccessStatusCode)
                 return RedirectToAction(nameof(Index));
 
+            ModelState.AddModelError("", "Failed to create client.");
             return View(client);
         }
 
         public async Task<IActionResult> Details(int id)
         {
-            var client = await _http.GetFromJsonAsync<ClientDetails>($"{baseUrl}/{id}");
-
-            if (client == null)
-                return NotFound();
-
-            return View(client);
+            var client = await _http.GetFromJsonAsync<ClientDetails>($"{_baseUrl}/{id}");
+            return client == null ? NotFound() : View(client);
         }
 
         public async Task<IActionResult> Edit(int id)
         {
-            var client = await _http.GetFromJsonAsync<ClientDetails>($"{baseUrl}/{id}");
-
-            if (client == null)
-                return NotFound();
-
-            return View(client);
+            var client = await _http.GetFromJsonAsync<ClientDetails>($"{_baseUrl}/{id}");
+            return client == null ? NotFound() : View(client);
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, ClientDetails client)
         {
-            var response = await _http.PutAsJsonAsync($"{baseUrl}/{id}", client);
+            if (!ModelState.IsValid)
+                return View(client);
+
+            var response = await _http.PutAsJsonAsync($"{_baseUrl}/{id}", client);
 
             if (response.IsSuccessStatusCode)
                 return RedirectToAction(nameof(Index));
 
+            ModelState.AddModelError("", "Failed to update client.");
             return View(client);
         }
 
         public async Task<IActionResult> Delete(int id)
         {
-            var client = await _http.GetFromJsonAsync<ClientDetails>($"{baseUrl}/{id}");
-            return View(client);
+            var client = await _http.GetFromJsonAsync<ClientDetails>($"{_baseUrl}/{id}");
+            return client == null ? NotFound() : View(client);
         }
 
         [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            await _http.DeleteAsync($"{baseUrl}/{id}");
+            await _http.DeleteAsync($"{_baseUrl}/{id}");
             return RedirectToAction(nameof(Index));
         }
     }

@@ -2,10 +2,19 @@ using Prog7311PoeTwo;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// MVC services
 builder.Services.AddControllersWithViews();
 
-// HttpClient for calling Web API
+// HttpClient factory
 builder.Services.AddHttpClient();
+
+// API base URL
+var apiBaseUrl = builder.Configuration["ApiSettings:BaseUrl"];
+
+builder.Services.AddHttpClient("API", client =>
+{
+    client.BaseAddress = new Uri(apiBaseUrl!);
+});
 
 var app = builder.Build();
 

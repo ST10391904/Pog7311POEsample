@@ -14,31 +14,40 @@ namespace PROG7311POEAPI.Services
             _config = config;
         }
 
-        public async Task<decimal> ConvertToZAR(string currency, decimal amount)
+        public async Task<decimal> ConvertToZAR(string fromCurrency, decimal amount)
         {
-            var baseUrl = _config["CurrencyApi:BaseUrl"];
+            var apiKey = _config["CurrencyApi:ApiKey"];
 
-            if (string.IsNullOrWhiteSpace(baseUrl))
-                return 0;
+            if (string.IsNullOrWhiteSpace(apiKey))
+                throw new Exception("Missing Currency API Key");
 
-            var response = await _http.GetFromJsonAsync<ExchangeResponse>(
-                $"{baseUrl}{currency}"
-            );
+            var url = $"https://openexchangerates.org/api/latest.json?app_id={apiKey}";
 
-            if (response == null || response.Rates == null)
-                return 0;
+            var response = await _http.GetFromJsonAsync<ExchangeResponse>(url);
 
-            if (!response.Rates.ContainsKey("ZAR"))
-                return 0;
+            if (response?.Rates == null || response.Rates.Count == 0)
+                throw new Exception("Failed to retrieve exchange rates from API");
 
-            var rate = response.Rates["ZAR"];
+            var rates = response.Rates;
 
-            return amount * rate;
+            fromCurrency = fromCurrency.ToUpper().Trim();
+
+            if (!rates.TryGetValue(fromCurrency, out var fromRate))
+                throw new Exception($"Currency not supported: {fromCurrency}");
+
+            if (!rates.TryGetValue("ZAR", out var zarRate))
+                throw new Exception("ZAR rate missing from API response");
+
+            decimal usdAmount = fromCurrency == "USD"
+                ? amount
+                : amount / fromRate;
+
+            return usdAmount * zarRate;
         }
 
         private class ExchangeResponse
         {
-            public Dictionary<string, decimal> Rates { get; set; }
+            public Dictionary<string, decimal> Rates { get; set; } = new();
         }
     }
 }
