@@ -54,6 +54,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\FileServer\Contracts\426f9a16-893f-4656-90fe-dc027ffdd245.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\FileServer\Contracts\5f269fd6-c115-4d5b-ad3e-626146913e74.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Prog7311PoeTwo</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Prog7311PoeTwo</BasePath>
+      <RelativePath>FileServer/Contracts/5f269fd6-c115-4d5b-ad3e-626146913e74.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>wnmbsz44zq</Fingerprint>
+      <Integrity>fI/q8ucECskEIJFSLImORfanVUNykMov6owv4wNgAMU=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\FileServer\Contracts\5f269fd6-c115-4d5b-ad3e-626146913e74.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\FileServer\Contracts\66850840-ded4-47a2-9b81-07ad9e56d7e7.jpeg'))">
       <SourceType>Package</SourceType>
       <SourceId>Prog7311PoeTwo</SourceId>
