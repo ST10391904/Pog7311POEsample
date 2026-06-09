@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ql3hhAH7CR38HeR0lfh5w4zKyah45K3BjJLu+n6oYW0=",
+  "Hash": "+7BUwRoezI6Fz7z4P4Z7tti+NA5pW2Deqq6iYuFGeL0=",
   "Source": "Prog7311PoeTwo",
   "BasePath": "_content/Prog7311PoeTwo",
   "Mode": "Default",
@@ -1445,6 +1445,27 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+      "Identity": "C:\\Users\\Music\\Desktop\\Year 3 Term 1\\PROG7311\\Prog7311 - Part 2\\Prog7311PoeTwo\\wwwroot\\FileServer\\Contracts\\383833f6-3a88-4789-afb9-ba682462cadc.jpg",
+      "SourceId": "Prog7311PoeTwo",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Music\\Desktop\\Year 3 Term 1\\PROG7311\\Prog7311 - Part 2\\Prog7311PoeTwo\\wwwroot\\",
+      "BasePath": "_content/Prog7311PoeTwo",
+      "RelativePath": "FileServer/Contracts/383833f6-3a88-4789-afb9-ba682462cadc#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "wnmbsz44zq",
+      "Integrity": "fI/q8ucECskEIJFSLImORfanVUNykMov6owv4wNgAMU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\FileServer\\Contracts\\383833f6-3a88-4789-afb9-ba682462cadc.jpg"
+    },
+    {
       "Identity": "C:\\Users\\Music\\Desktop\\Year 3 Term 1\\PROG7311\\Prog7311 - Part 2\\Prog7311PoeTwo\\wwwroot\\FileServer\\Contracts\\426f9a16-893f-4656-90fe-dc027ffdd245.jpg",
       "SourceId": "Prog7311PoeTwo",
       "SourceType": "Discovered",
@@ -1548,6 +1569,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\FileServer\\Contracts\\92f87277-2619-43b6-8b4a-9f928b1de25f.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Music\\Desktop\\Year 3 Term 1\\PROG7311\\Prog7311 - Part 2\\Prog7311PoeTwo\\wwwroot\\FileServer\\Contracts\\a5b11f2a-a8e5-4630-9e8a-510282f5a384.jpg",
+      "SourceId": "Prog7311PoeTwo",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Music\\Desktop\\Year 3 Term 1\\PROG7311\\Prog7311 - Part 2\\Prog7311PoeTwo\\wwwroot\\",
+      "BasePath": "_content/Prog7311PoeTwo",
+      "RelativePath": "FileServer/Contracts/a5b11f2a-a8e5-4630-9e8a-510282f5a384#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "wnmbsz44zq",
+      "Integrity": "fI/q8ucECskEIJFSLImORfanVUNykMov6owv4wNgAMU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\FileServer\\Contracts\\a5b11f2a-a8e5-4630-9e8a-510282f5a384.jpg"
     },
     {
       "Identity": "C:\\Users\\Music\\Desktop\\Year 3 Term 1\\PROG7311\\Prog7311 - Part 2\\Prog7311PoeTwo\\wwwroot\\FileServer\\Contracts\\e10edd86-6c7d-4de1-96fb-eb7e92e95b43.jpg",
@@ -3513,6 +3555,88 @@
       ]
     },
     {
+      "Route": "FileServer/Contracts/383833f6-3a88-4789-afb9-ba682462cadc.jpg",
+      "AssetFile": "C:\\Users\\Music\\Desktop\\Year 3 Term 1\\PROG7311\\Prog7311 - Part 2\\Prog7311PoeTwo\\wwwroot\\FileServer\\Contracts\\383833f6-3a88-4789-afb9-ba682462cadc.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "93096"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fI/q8ucECskEIJFSLImORfanVUNykMov6owv4wNgAMU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 09 Jun 2026 03:03:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-fI/q8ucECskEIJFSLImORfanVUNykMov6owv4wNgAMU="
+        }
+      ]
+    },
+    {
+      "Route": "FileServer/Contracts/383833f6-3a88-4789-afb9-ba682462cadc.wnmbsz44zq.jpg",
+      "AssetFile": "C:\\Users\\Music\\Desktop\\Year 3 Term 1\\PROG7311\\Prog7311 - Part 2\\Prog7311PoeTwo\\wwwroot\\FileServer\\Contracts\\383833f6-3a88-4789-afb9-ba682462cadc.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "93096"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fI/q8ucECskEIJFSLImORfanVUNykMov6owv4wNgAMU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 09 Jun 2026 03:03:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wnmbsz44zq"
+        },
+        {
+          "Name": "label",
+          "Value": "FileServer/Contracts/383833f6-3a88-4789-afb9-ba682462cadc.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-fI/q8ucECskEIJFSLImORfanVUNykMov6owv4wNgAMU="
+        }
+      ]
+    },
+    {
       "Route": "FileServer/Contracts/426f9a16-893f-4656-90fe-dc027ffdd245.jpg",
       "AssetFile": "C:\\Users\\Music\\Desktop\\Year 3 Term 1\\PROG7311\\Prog7311 - Part 2\\Prog7311PoeTwo\\wwwroot\\FileServer\\Contracts\\426f9a16-893f-4656-90fe-dc027ffdd245.jpg",
       "Selectors": [],
@@ -3915,6 +4039,88 @@
         {
           "Name": "label",
           "Value": "FileServer/Contracts/92f87277-2619-43b6-8b4a-9f928b1de25f.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-fI/q8ucECskEIJFSLImORfanVUNykMov6owv4wNgAMU="
+        }
+      ]
+    },
+    {
+      "Route": "FileServer/Contracts/a5b11f2a-a8e5-4630-9e8a-510282f5a384.jpg",
+      "AssetFile": "C:\\Users\\Music\\Desktop\\Year 3 Term 1\\PROG7311\\Prog7311 - Part 2\\Prog7311PoeTwo\\wwwroot\\FileServer\\Contracts\\a5b11f2a-a8e5-4630-9e8a-510282f5a384.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "93096"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fI/q8ucECskEIJFSLImORfanVUNykMov6owv4wNgAMU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 09 Jun 2026 03:06:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-fI/q8ucECskEIJFSLImORfanVUNykMov6owv4wNgAMU="
+        }
+      ]
+    },
+    {
+      "Route": "FileServer/Contracts/a5b11f2a-a8e5-4630-9e8a-510282f5a384.wnmbsz44zq.jpg",
+      "AssetFile": "C:\\Users\\Music\\Desktop\\Year 3 Term 1\\PROG7311\\Prog7311 - Part 2\\Prog7311PoeTwo\\wwwroot\\FileServer\\Contracts\\a5b11f2a-a8e5-4630-9e8a-510282f5a384.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "93096"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fI/q8ucECskEIJFSLImORfanVUNykMov6owv4wNgAMU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 09 Jun 2026 03:06:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wnmbsz44zq"
+        },
+        {
+          "Name": "label",
+          "Value": "FileServer/Contracts/a5b11f2a-a8e5-4630-9e8a-510282f5a384.jpg"
         },
         {
           "Name": "integrity",
@@ -22237,7 +22443,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 08 Jun 2026 04:33:26 GMT"
+          "Value": "Tue, 09 Jun 2026 02:53:09 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22298,7 +22504,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 08 Jun 2026 04:33:26 GMT"
+          "Value": "Tue, 09 Jun 2026 02:53:09 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22343,7 +22549,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 08 Jun 2026 04:33:26 GMT"
+          "Value": "Tue, 09 Jun 2026 02:53:09 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22398,7 +22604,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 08 Jun 2026 04:33:26 GMT"
+          "Value": "Tue, 09 Jun 2026 02:53:09 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22459,7 +22665,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 08 Jun 2026 04:33:26 GMT"
+          "Value": "Tue, 09 Jun 2026 02:53:09 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22504,7 +22710,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 08 Jun 2026 04:33:26 GMT"
+          "Value": "Tue, 09 Jun 2026 02:53:09 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22559,7 +22765,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 08 Jun 2026 04:33:26 GMT"
+          "Value": "Tue, 09 Jun 2026 02:53:09 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22612,7 +22818,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 08 Jun 2026 04:33:26 GMT"
+          "Value": "Tue, 09 Jun 2026 02:53:09 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22649,7 +22855,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 08 Jun 2026 04:33:26 GMT"
+          "Value": "Tue, 09 Jun 2026 02:53:09 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22696,7 +22902,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 08 Jun 2026 04:33:26 GMT"
+          "Value": "Tue, 09 Jun 2026 02:53:09 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22749,7 +22955,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 08 Jun 2026 04:33:26 GMT"
+          "Value": "Tue, 09 Jun 2026 02:53:09 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22786,7 +22992,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 08 Jun 2026 04:33:26 GMT"
+          "Value": "Tue, 09 Jun 2026 02:53:09 GMT"
         },
         {
           "Name": "Cache-Control",

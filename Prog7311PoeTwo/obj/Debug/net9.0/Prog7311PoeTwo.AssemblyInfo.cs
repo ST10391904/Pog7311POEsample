@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Prog7311PoeTwo")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9a3ccbe991d37930a24702dec5a47bda97ffb22e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c8b4c9134427334387f135bf45595701cbbea0b0")]
 [assembly: System.Reflection.AssemblyProductAttribute("Prog7311PoeTwo")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Prog7311PoeTwo")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
